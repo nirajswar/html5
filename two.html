@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-----{--method=get(show data in url)--post(hide data in url) }
+      --action(after submit where to go)--->
+
+    <form action="" method="get">
+        Email : <input type="email" name="email">
+        <hr>
+        Password : <input type="password" name="password">
+        <hr>
+        Country: <select name="counry">
+            <option>Nepal</option>
+            <option>India</option>
+            <option>China</option>
+            <option>Bhutan</option>
+            <option value="United State">USA</option>
+        </select>
+
+        <hr>
+        COURSES: <input type="checkbox" name="courses" value="web"> WEB DESIGN
+        <input type="checkbox" name="courses" value="python">PYTHON
+        <input type="checkbox" name="courses" value="laravel">JAVA
+        <hr>
+
+        Message: <textarea name="Message" rows="5" cols="10"></textarea>
+        <hr>
+        color: <input type="color" name="color">
+        <hr>
+        Domain: <input type="url" name="domain">
+        <hr>
+        Range: <input type="range" name="range">
+        <hr>
+        Date: <input type="date" name="date">
+        <hr>
+        Time: <input type="time" name="time">
+        <hr>
+        File: <input type="file" name="file">
+        <hr>
+        month: <input type="month" name="month">
+        <hr>
+        week: <input type="week" name="week">
+        <hr>
+        
+             Placeholder: <input type="text" name="1" placeholder="Enter Name">
+             <hr>
+             required: <input type="text" name="12" required>
+             <hr>
+             read only<input type="text" value="kuwait" name="21" readonly>
+             <hr>
+             hidden
+              <input type="hidden" name="211" value="nepal">
+
+             <hr>
+             Countrylist <input type="text" name="Countrylist" list="abc">
+             <datalist id="abc">
+                <option>Nepal</option>
+                <option>India</option>
+                <option>China</option>
+                <option>Indo</option>
+                <option>tAIWAN</option>
+
+             </datalist>
+
+             <hr>
+
+             courses:
+             <select name="study" size="10">
+                <optgroup label="Frontend">
+                    <option>HTML</option>
+                    <option>css</option>
+                    <option>java</option>
+                    <option>react</option>
+
+                </optgroup>
+
+                <optgroup label="Backend">
+                    <option>php</option>
+                    <option>laravel</option>
+                    <option>jango</option>
+                    <option>node js</option>
+
+                </optgroup>
+             </select>
+              <hr>
+              <input type="reset" name="reset">
+              <input type="image"
+                  src="data:image/png;base64,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"
+                   width="20px" ><hr>
+        <button>Send data</button>
+    </form>
+</body>
+
+</html>
